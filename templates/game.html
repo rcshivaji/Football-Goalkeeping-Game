@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Goalkeeping Game</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <div id="field">
+        <!-- Football field and game elements go here -->
+        <div id="goal"></div>
+        <div id="ball"></div>
+        <div id="goalkeeper"></div>
+    </div>
+    <div id="controls">
+        <!-- Buttons for shooting in different directions -->
+        <button onclick="shoot('left')">Shoot Left</button>
+        <button onclick="shoot('center')">Shoot Center</button>
+        <button onclick="shoot('right')">Shoot Right</button>
+    </div>
+    <div id="prediction">
+        <!-- Display CPU goalkeeper's prediction here -->
+        CPU predicts: <span id="predicted-direction"></span>
+    </div>
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>

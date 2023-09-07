@@ -1,0 +1,81 @@
+/* Reset some default styles and set up a background */
+body, html {
+    margin: 0;
+    padding: 0;
+    background-color: #87CEEB; /* Light blue background color */
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+/* Center the game field horizontally */
+#field {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+/* Styling for the goal */
+#goal {
+    background-color: #008000; /* Green goalpost color */
+    width: 10px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    top: 10%;
+    transform: translateX(-50%);
+}
+
+/* Styling for the ball */
+#ball {
+    background-color: #FFFFFF; /* White ball color */
+    width: 30px;
+    height: 30px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+}
+
+/* Styling for the goalkeeper */
+#goalkeeper {
+    background-color: #FF0000; /* Red goalkeeper color */
+    width: 80px;
+    height: 100px;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Styling for the shooting controls */
+#controls {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styling for the prediction section */
+#prediction {
+    text-align: center;
+    margin-top: 20px;
+    font-weight: bold;
+}
+
+/* Styling for buttons */
+button {
+    background-color: #4CAF50; /* Green button color */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 5px;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
