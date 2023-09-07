@@ -29,7 +29,7 @@ def predict_user_direction():
 
     return predicted_direction
 
-# Pattern prediction algorithm
+# Pattern prediction algorithm :o 
 
 
 @app.route('/')
